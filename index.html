@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Town Mystery UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="illustration-container">
+        <img src="static/engineer_detectives.png" alt="Engineer typing with detectives behind" id="illustration">
+    </div>
+    <div id="terminal-container">
+        <div id="output" aria-live="polite"></div>
+        <form id="query-form">
+            <label for="query-input" class="sr-only">SQL Query</label>
+            <input type="text" id="query-input" autocomplete="off" placeholder="Type your SQL query here..." required>
+            <button type="submit">Run</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
